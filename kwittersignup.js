@@ -15,10 +15,14 @@ var firebaseConfig = {
 function addUser() {
 
     user_name = document.getElementById("user_name").value;
-  
-    localStorage.setItem("user_name", user_name);
-    firebase.database().ref("/Kwitter_Users").child(user_name).update({
+    try {
+    firebase.database().ref("/Kwitter_Users").child(user_name).add({
       Admin: "false"
     });
+    localStorage.setItem("user_name", user_name);
+    window.alert("User Added!")
       window.location = "kwitter_room.html";
+    } catch {
+      window.alert("error")
+    }
   }
