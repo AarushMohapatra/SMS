@@ -19,10 +19,10 @@ function addUser() {
     firebase.database().ref("/Kwitter_Users").child(user_name).add({
       Admin: "false"
     });
-    localStorage.setItem("user_name", user_name);
-    window.alert("User Added!")
-      window.location = "kwitter_room.html";
     } catch {
       window.alert("error")
     }
+    localStorage.setItem("user_name", user_name);
+    window.alert("User Added!")
+      window.location = "kwitter_room.html";
   }
