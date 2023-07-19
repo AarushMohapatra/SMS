@@ -15,8 +15,12 @@ var firebaseConfig = {
 function addUser() {
 
     user_name = document.getElementById("user_name").value;
+    pass_word = document.getElementById("passwordinput").value;
     try {
-    firebase.database().ref("/").child(user_name).set({
+      //.child(user_name)
+    firebase.database().ref("/").push({
+      username: user_name,
+      password: pass_word,
       Admin: "false"
     });
     } catch(error) {
