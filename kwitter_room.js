@@ -19,7 +19,7 @@ document.getElementById("user_name").innerHTML = "Welcome " + user_name + "!";
 function addRoom() {
   room_name = document.getElementById("room_name").value;
 
-  firebase.database().ref("/rooms").child(room_name).update({
+  firebase.database().ref("rooms").child(room_name).update({
     purpose: "adding room name"
   });
 
@@ -29,7 +29,7 @@ function addRoom() {
 }
 
 function getData() {
-  firebase.database().ref("/rooms").on('value', function (snapshot) {
+  firebase.database().ref("rooms").on('value', function (snapshot) {
     document.getElementById("output").innerHTML = "";
     snapshot.forEach(function (childSnapshot) {
       childKey = childSnapshot.key;
