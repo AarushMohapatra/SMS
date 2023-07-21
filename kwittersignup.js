@@ -1,14 +1,15 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyDTscdRlz7-TnvICi336UotmTensyv52Yc",
-  authDomain: "login-f9f06.firebaseapp.com",
-  databaseURL: "https://login-f9f06-default-rtdb.firebaseio.com",
-  projectId: "login-f9f06",
-  storageBucket: "login-f9f06.appspot.com",
-  messagingSenderId: "402235516350",
-  appId: "1:402235516350:web:f14952632b49dc7fa085ef"
+  apiKey: "AIzaSyDJhzwo_nAyUIdqxSDzGNyL4QeRy_GWk2Q",
+  authDomain: "login-cb19c.firebaseapp.com",
+  databaseURL: "https://login-cb19c-default-rtdb.firebaseio.com",
+  projectId: "login-cb19c",
+  storageBucket: "login-cb19c.appspot.com",
+  messagingSenderId: "35014884101",
+  appId: "1:35014884101:web:075f7824e9021984c7556c"
 };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 
 // ADD YOUR FIREBASE LINKS
 
