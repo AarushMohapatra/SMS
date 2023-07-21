@@ -10,7 +10,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-
+//
 // ADD YOUR FIREBASE LINKS
 
 function addUser() {
@@ -21,8 +21,7 @@ function addUser() {
       //.child(user_name)
     firebase.database().ref("/").set({
       username: user_name,
-      password: pass_word,
-      Admin: "false"
+      password: pass_word
     });
     } catch(error) {
       window.alert("error adding user to FireBase");
