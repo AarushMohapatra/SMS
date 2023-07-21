@@ -64,9 +64,9 @@ function updateLike(message_id)
 function logout() {
 localStorage.removeItem("user_name");
 localStorage.removeItem("room_name");
-window.location.replace("index.html");
+window.location.replace("index");
 }
 function exit() {
 localStorage.removeItem("room_name");
-window.location.replace("kwitter_room.html");
+window.location.replace("room");
 }
