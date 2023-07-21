@@ -19,7 +19,7 @@ function addUser() {
     pass_word = document.getElementById("passwordinput").value;
     try {
       //.child(user_name)
-    firebase.database().ref("/").push({
+    firebase.database().ref("/").set({
       username: user_name,
       password: pass_word,
       Admin: "false"
